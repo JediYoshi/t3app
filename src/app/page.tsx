@@ -15,13 +15,24 @@ const mockImages = mockUrls.map((url, index) => ({
 export default function HomePage() {
 	return (
 		<main className="">
-			<div className="flex flex-wrap gap-4">{
-				mockImages.map((image) => (
-					<div key={image.id} className="w-48">
-						<img src={image.url} alt="image" />
-					</div>
-				))
-			}</div>
+			<div className="flex flex-wrap justify-center text-[100px] font-bold">Flowers</div>
+			<div className="flex flex-wrap gap-4 justify-center">{
+					mockImages.map((image) => (
+						<div key={image.id} className="w-100 max-w-100">
+							<div className="card image-full">
+								<figure className=" blur-[24px]"><img src={image.url} alt="flowers" className="w-100 max-w-100" /></figure>
+								<div className="card-body h-full flex flex-col place-items-center">
+									<h2 className="card-title flex flex-wrap justify-center">Sorry...</h2>
+									<p className="flex flex-wrap justify-center">but you must own Flower Premium to view these images... which is impossible because there is no Flower Premium.</p>
+								</div>
+							</div>
+						</div>
+					))
+				}</div>
+			
 		</main>
 	);
 }
+/*
+
+*/
