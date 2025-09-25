@@ -23,7 +23,8 @@ export default function HomePage() {
 								<figure className=" blur-[24px]"><img src={image.url} alt="flowers" className="w-100 max-w-100" /></figure>
 								<div className="card-body h-full flex flex-col place-items-center">
 									<h2 className="card-title flex flex-wrap justify-center">Sorry...</h2>
-									<p className="flex flex-wrap justify-center">but you must own Flower Premium to view these images... which is impossible because there is no Flower Premium.</p>
+									<p className="flex flex-wrap justify-center">but you must own Flower Premium to view these images...</p>
+									<Link href="/shop"><div className="btn btn-info rounded-[6px]">Get Flower Premium</div></Link>
 								</div>
 							</div>
 						</div>

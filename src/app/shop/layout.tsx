@@ -15,11 +15,9 @@ export default function LayoutPage02({
   children,
 }: Readonly<{ children: React.ReactNode }>) {
   return (
-    <html lang="en">
-      <body className={`${geist.variable}`}>
-        <div className="w-full justify-center flex border-1 text-[20px] bg-[#FFFFFF] text-[#000000]">Second Layout YEAH!</div>
-        {children}
-      </body>
-    </html>
+    <main className={`${geist.variable}`}>
+      <div className="w-full justify-center flex border-1 text-[20px] bg-[#FFFFFF] text-[#000000]">Shop</div>
+      {children}
+    </main>
   );
 }

@@ -30,7 +30,7 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body className={`${geist.variable}`}>
-        <div className="w-full justify-center flex border-1 text-[20px] bg-[#000000]">Root Layout</div>
+        <div className="w-full justify-center flex border-1 text-[20px] bg-[#000000] text-[#FFFFFF]">Website</div>
         {children}
       </body>
     </html>
