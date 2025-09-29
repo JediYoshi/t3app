@@ -22,8 +22,8 @@ export default function RootLayout({
     <html lang="en">
       <body className={`${geist.variable}`}>
 		<div className="navbar shadow-sm bg-[#963992]">
-			<Link href="/"><div className="btn btn-ghost text-xl font-bold">Flowers</div></Link>
-			<Link href="/shop"><div className="btn btn-ghost text-xl font-normal">Shop</div></Link>
+			<Link href="/"><div className="btn btn-ghost rounded-[6px] text-[24px] font-bold">Flowers</div></Link>
+			<Link href="/shop"><div className="btn btn-ghost rounded-[6px] text-[24px] font-normal">Shop</div></Link>
 		</div>
         {children}
       </body>
