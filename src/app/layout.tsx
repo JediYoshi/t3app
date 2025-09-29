@@ -2,6 +2,7 @@ import "~/styles/globals.css";
 
 import type { Metadata } from "next";
 import { Geist } from "next/font/google";
+import Link from "next/link";
 
 export const metadata: Metadata = {
 	title: "Flowers",
@@ -14,23 +15,16 @@ const geist = Geist({
 	variable: "--font-geist-sans",
 });
 
-/*export default function RootLayout({
-	children,
-}: Readonly<{ children: React.ReactNode }>) {
-	return (
-		<html lang="en" className={`${geist.variable}`}>
-			<body>{children}</body>
-		</html>
-	);
-}*/
-
 export default function RootLayout({
   children,
 }: Readonly<{ children: React.ReactNode }>) {
   return (
     <html lang="en">
       <body className={`${geist.variable}`}>
-        <div className="w-full justify-center flex border-1 text-[20px] bg-[#000000] text-[#FFFFFF]">Website</div>
+		<div className="navbar shadow-sm bg-[#963992]">
+			<Link href="/"><div className="btn btn-ghost text-xl font-bold">Flowers</div></Link>
+			<Link href="/shop"><div className="btn btn-ghost text-xl font-normal">Shop</div></Link>
+		</div>
         {children}
       </body>
     </html>
