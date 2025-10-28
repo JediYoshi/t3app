@@ -12,7 +12,7 @@ const mockImages = mockUrls.map((url, index) => ({
 }));
 
 
-export default function HomePage() {
+export default function rootpage() {
 	return (
 		<main className="">
 			<div className="flex flex-wrap justify-center text-[100px] font-bold">Flowers</div>

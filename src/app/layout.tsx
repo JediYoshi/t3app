@@ -15,7 +15,7 @@ const geist = Geist({
 	variable: "--font-geist-sans",
 });
 
-export default function RootLayout({
+export default function rootlayout({
   children,
 }: Readonly<{ children: React.ReactNode }>) {
   return (
@@ -25,6 +25,7 @@ export default function RootLayout({
 			<div className="navbar-start">
 				<Link href="/"><div className="btn btn-ghost rounded-[6px] text-[24px] font-bold">Flowers</div></Link>
 				<Link href="/shop"><div className="btn btn-ghost rounded-[6px] text-[24px] font-normal">Shop</div></Link>
+				<Link href="/posts"><div className="btn btn-ghost rounded-[6px] text-[24px] font-normal">Posts</div></Link>
 			</div>
 			<div className="navbar-end">
 				<div className="btn btn-ghost btn-circle ">

@@ -1,6 +1,6 @@
 import Link from "next/link";
 
-export default function Layer2Page() {
+export default function pageShop() {
   return (
     <main className="">
         <div className="flex flex-wrap justify-center text-[100px] font-bold">Shop</div>
