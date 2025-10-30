@@ -4,12 +4,17 @@ import Link from "next/link";
 
 
 export default async function pagePosts() {
-    const data = await db.query.posts.findMany({
-        columns: {
-            content: true,
-            title: true,
-        },
-    })
+    async function refreshPosts() {
+        return (
+            await db.query.posts.findMany({
+                columns: {
+                    content: true,
+                    title: true,
+                },
+            })
+        )
+    };
+    const data = await refreshPosts();
  
     return (
         <main className="flex flex-wrap justify-center gap-4">
