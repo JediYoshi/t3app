@@ -1,4 +1,3 @@
-"use client";
 import { db } from "~/server/db";
 import { posts } from "~/server/db/schema";
 import Link from "next/link";
